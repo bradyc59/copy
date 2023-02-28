@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Delivery",
+            "request": "launch",
+            "mainClass": "Delivery",
+            "projectName": "ca4006_bb967fbb"
+        },
+        {
+            "type": "antlr-debug",
+            "request": "launch",
+            "name": "Debug Current Grammar",
+            "input": "input.txt",
+            "visualParseTree": true
+        }
+    ]
+}
