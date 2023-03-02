@@ -30,7 +30,7 @@ public class Books {
         return BookCategory;
     }
 
-    public static void main() {
+    public static void main(String[] args) {
         Books book = new Books();
         book.setCategory();
     }

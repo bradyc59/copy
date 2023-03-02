@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Books",
+            "request": "launch",
+            "mainClass": "Books",
+            "projectName": "ca4006_bb967fbb"
+        },
+        {
+            "type": "java",
             "name": "Launch Delivery",
             "request": "launch",
             "mainClass": "Delivery",
