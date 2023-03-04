@@ -45,8 +45,13 @@ public class Delivery {
         return TicksTillDelivery;
     }
 
+    @Override
+    public String toString() {
+        return ""+DeliveryList;
+    }
+
     public static void main(String[] args) {
-        System.out.print(GenerateDelivery());
+        GenerateDelivery();
     }
 
 

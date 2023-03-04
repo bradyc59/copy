@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Shelve",
+            "request": "launch",
+            "mainClass": "Shelve",
+            "projectName": "ca4006_2609de83"
+        },
+        {
+            "type": "java",
+            "name": "Delivery",
+            "request": "launch",
+            "mainClass": "Delivery",
+            "projectName": "ca4006_2609de83"
+        },
+        {
+            "type": "java",
+            "name": "Assistant",
+            "request": "launch",
+            "mainClass": "Assistant",
+            "projectName": "ca4006_2609de83"
+        },
+        {
+            "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "Box",
+            "projectName": "ca4006_2609de83"
+        },
+        {
+            "type": "java",
             "name": "Books",
             "request": "launch",
             "mainClass": "Books",

@@ -12,6 +12,11 @@ public class Books {
         Category = GiveBookACategorie();
     }
 
+    @Override
+    public String toString() {
+        return ""+Category;
+    }
+
     public static String GiveBookACategorie() {
         List<String> ListOfCategories = new ArrayList<String>();
         ListOfCategories.add("Fiction");
