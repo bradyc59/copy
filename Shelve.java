@@ -12,33 +12,40 @@ public class Shelve {
 
     public static void AddBooksToShelves(Assistant assistant) {
         for (Books book : assistant.getBooks()) {
-            // System.out.println(book.equals("Fiction"));
-            if (book.equals("Fiction")) {
+            // System.out.println(book.toString().equals("Fiction"));
+            // System.out.println(book);
+            if (book.toString().equals("Fiction")) {
                 if (FictionShelf.size() < capacity) {
                     FictionShelf.add(book);
                 }
-            } else if (book.equals("Horror")) {
+            } else if (book.toString().equals("Horror")) {
                 if (HorrorShelf.size() < capacity) {
                     HorrorShelf.add(book);
                 }
-            } else if (book.equals("Sport")) {
+            } else if (book.toString().equals("Sport")) {
                 if (SportShelf.size() < capacity) {
                     SportShelf.add(book);
                 }
-            } else if (book.equals("Fantasy")) {
+            } else if (book.toString().equals("Fantasy")) {
                 if (FantasyShelf.size() < capacity) {
                     FantasyShelf.add(book);
                 }
-            } else if (book.equals("Romance")) {
+            } else if (book.toString().equals("Romance")) {
                 if (RomanceShelf.size() < capacity) {
                     RomanceShelf.add(book);
                 }
-            } else if (book.equals("Crime")) {
+            } else if (book.toString().equals("Crime")) {
                 if (CrimeShelf.size() < capacity) {
                     CrimeShelf.add(book);
                 }
             }
         }
+        // System.out.println(FictionShelf);
+        // System.out.println(HorrorShelf);
+        // System.out.println(SportShelf);
+        // System.out.println(FantasyShelf);
+        // System.out.println(RomanceShelf);
+        // System.out.println(CrimeShelf);
     }
     
     public static void main(String [] args){
