@@ -37,11 +37,13 @@ public class Box {
 
     public static List<Books> FillBox(List<Books> DeliveryList) {
         int i = 0;
-
             if (DeliveryList.size() != 0) 
             {
                 while (i < DeliveryList.size()) 
                 {
+                    if(BooksInBox.size() == space){
+                        return BooksInBox;
+                    }
                     Books x = DeliveryList.get(i);
                     
                     BooksInBox.add(x);

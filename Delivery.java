@@ -41,7 +41,6 @@ public class Delivery {
         if (TicksTillDelivery == 0 ) {
             TicksTillDelivery = 100;
         }
-
         return TicksTillDelivery;
     }
 

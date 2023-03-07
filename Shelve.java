@@ -47,7 +47,10 @@ public class Shelve {
         // System.out.println(RomanceShelf);
         // System.out.println(CrimeShelf);
     }
-    
+    @Override
+    public String toString() {
+        return ""+RomanceShelf;
+    }
     public static void main(String [] args){
         Assistant assistant = new Assistant();
         assistant.main(args);
