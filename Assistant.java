@@ -1,15 +1,18 @@
 import java.util.*;
+
 public class Assistant {
     static List<Books> booksToTake = new ArrayList<Books>();
-    
+    static int carrySpace = 10;
 
     public synchronized static List<Books> takeBooksFromBox(Box box) {
         List<Books> books = box.getBooks();
         if (!books.isEmpty()) {
-            for (Books book : books) {
-                booksToTake.add(book);
+            while (booksToTake.size() < carrySpace) {
+                for (Books book : books) {
+                    booksToTake.add(book);
+                }
             }
-            books.removeAll(books);
+            books.removeAll(booksToTake);
             return booksToTake;
         } else {
             return null;
@@ -19,17 +22,17 @@ public class Assistant {
     public int size() {
         int Size = booksToTake.size();
 
-        System.out.print(Size);
+        // System.out.print(Size);
 
         return Size;
     }
-    
 
     @Override
     public String toString() {
-        return ""+booksToTake;
+        return "" + booksToTake;
     }
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         Box books = new Box();
         books.main(args);
         // System.out.println(books.toString());

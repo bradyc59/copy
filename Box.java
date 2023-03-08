@@ -35,7 +35,7 @@ public class Box {
         return books;
     }
 
-    public static List<Books> FillBox(List<Books> DeliveryList) {
+    public List<Books> FillBox(List<Books> DeliveryList) {
         int i = 0;
             if (DeliveryList.size() != 0) 
             {
@@ -58,7 +58,7 @@ public class Box {
     public int size() {
         int Size = BooksInBox.size();
 
-        System.out.print(Size);
+        // System.out.print(Size);
 
         return Size;
     }
@@ -75,10 +75,10 @@ public class Box {
     }
 
     public static void main(String[] args){
-        // Box Box_1 = CreateNewBox();
+        Box Box_1 = CreateNewBox();
         Delivery Delivery = new Delivery();
         List<Books> delivery_1 = Delivery.GenerateDelivery();
-        FillBox(delivery_1);
+        Box_1.FillBox(delivery_1);
     }
 
 }

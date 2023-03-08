@@ -28,7 +28,7 @@ public class Delivery {
     public int size() {
         int Size = DeliveryList.size();
 
-        System.out.print(Size);
+        // System.out.print(Size);
 
         return Size;
     }
