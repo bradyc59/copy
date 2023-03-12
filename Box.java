@@ -1,13 +1,15 @@
 import java.util.*;
 
-public class Box {
+public class Box implements Runnable{
     static int space = 50;
     public static List<Books> BooksInBox = new ArrayList<Books>();
     static Box Box_1;
+    static Box box = CreateNewBox();
+    static Delivery delivery = new Delivery();
 
 
     // Need Function to print contents of Box
-    public List<Books> getBooks() {
+    public static List<Books> getBooks() {
         List<Books> books = new ArrayList<>();
     
         synchronized (BooksInBox) {
@@ -75,10 +77,18 @@ public class Box {
     }
 
     public static void main(String[] args){
-        Box Box_1 = CreateNewBox();
+        Box box = CreateNewBox();
         Delivery Delivery = new Delivery();
         List<Books> delivery_1 = Delivery.GenerateDelivery();
-        Box_1.FillBox(delivery_1);
+        box.FillBox(delivery_1);
+
+    }
+    @Override
+    public void run() {
+            List<Books> deliveredContents1 = delivery.GenerateDelivery();
+            box.FillBox(new ArrayList<>(deliveredContents1));
+            deliveredContents1.clear();
+        }
+                    
     }
 
-}

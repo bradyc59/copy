@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tick",
+            "request": "launch",
+            "mainClass": "Tick",
+            "projectName": "ca4006_2609de83"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
